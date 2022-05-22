@@ -1,0 +1,1 @@
+Aqui irá encontrar todos os exercícios e projetos realizados no curso de HTML e CSS para iniciantes!
