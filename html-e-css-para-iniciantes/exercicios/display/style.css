@@ -1,0 +1,4 @@
+/* Muda a direção da escrita */
+body {
+  writing-mode: vertical-lr;
+}
