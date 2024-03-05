@@ -1,0 +1,1 @@
+Repositórios para o curso Origamid, onde cada curso e seus respectivos exercicios serão separados por branch
