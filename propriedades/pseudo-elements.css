@@ -1,0 +1,31 @@
+h1::after {
+  /* content > conteúdo do elemento h1 */
+  /* o elemento não irá existir se não houver a propriedade
+  content, mesmo que esteja vazia. */
+  content: "";
+  display: block;
+  width: 40px;
+  height: 4px;
+  background: #caf;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 10px
+}
+
+li::before {
+  content: "";
+  display: inline-block;
+  border-radius: 100%;
+  border: 2px solid #caf;
+  width: 8px;
+  height: 8px;
+  background: linear-gradient(#caf, #fff);
+}
