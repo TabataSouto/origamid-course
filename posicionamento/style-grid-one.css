@@ -1,0 +1,46 @@
+
+h1 {
+  text-align: center;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  margin-top: 0px;
+}
+
+.comprar {
+  background: #a8f;
+  color: #103;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.item {
+  background: #f7f7f7;
+  border: 1px solid #e7e7e7;
+  padding: 20px;
+  border-radius: 4px;
+  display: grid;
+}
+
+/* PLACE-CONTENT: une a funcionalidade do align e
+justify, exatamente nessa ordem, sendo: place-content: valorAlign valorJustify. Caso passe un unico valor, como center por exemplo
+ele vai aplicar center em align e justify como acontece
+com as propriedades margin e padding. */
+
+/* Importante lembrar que no grid os espaçamentos
+não colidem cmo acontece com o margin e o padding. */
+.grid {
+  display: grid;
+  /* 1rf = unidade fracionária que distribui o espaço
+  que sobra entre os elemtos. Caso queira que uma das
+  colunas ocupe mais espaço do que a outra, basta
+  colocar 1fr 2fr por exemplo, e a segunda coluna irá
+  ocupar maior espaço do que a primeira. */
+  grid-template-columns: 1fr 1fr;
+  gap: 20px
+}

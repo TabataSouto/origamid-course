@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 40px;
+}
+
+h1, p {
+  margin: 0px
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 1;
+}
+
+p, span {
+  font-size: 20px;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 4px;
+
+  /* Você diz ao elemento em qual coluna ele deve
+  se posicionar, nesse caso, como temos 2 colunas na
+  classe .grid, a imagem vai ficar posicionada na
+  segunda coluna */
+
+  /* Quando falamos de grid, estamos falando de linhas,
+  sendo assim o nosso grid-template-columns: 1fr 1fr 
+  temos: linha1 = coluna1, linha2 = espaçamento entre
+  as colunas, e linha3 = coluna3. Logo quando dizemos que
+  a imagem deve ocupar 1/3 ela deve expandir da linha 1 a 3
+  deixando a imagem entre ambas colunas. Usar 1 / -1 vai
+  sempre dizer para ocupar de ponta a ponta (entre a primeira
+  e ultima coluna) o que é mais seguro caso não saibamos
+  quantas linhas o grid possui.*/
+  /* grid-column: 1 / -1 ; */
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+  
+  /* Segunda forma de fazer */
+  grid-template-columns: repeat(2, 1fr);
+  
+  /* Primeira forma de fazer */
+  /* grid-template-columns: 1fr 1fr; */
+
+  /* grid-template-rows: repeat(3, auto) 1fr;
+  place-items: start; */
+}
+
+.titulo {
+  grid-column: 1 / -1;
+}
+
+.info {
+  place-self: start;
+  display: grid;
+  place-items: start;
+  gap: 20px
+}
+
+.preco {
+  background: #ddd;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+
+.comprar {
+  background: #a8f;
+  border-radius: 4px;
+  color: #103;
+  font-size: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+}
